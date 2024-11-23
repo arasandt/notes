@@ -66,7 +66,8 @@ function git-quickcommit { git add -u ; git commit -m minorchange ; git push }
 Set-Alias -Name gitm -Value git-quickcommit
 $profile
 function gitpush($a) { git add -u ; git commit -m $a ; git push}
-function gitm { git add -u ; git commit -m minorchange ; git push }
+function gitm { git add -u ; git commit -m minorchange ; git push }f
+function sshr($a) {ssh-keygen -R $a}
 
 ### Easilty push code to all branches one by one
 git branch merge
