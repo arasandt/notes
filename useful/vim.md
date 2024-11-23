@@ -1,67 +1,110 @@
-:set paste --> to keep formatting e.x. when pasting xml
-:set autoindent
-:set shiftwidth=2
-SHIFT V to get into visual mode
-Select the rows
-SHIFT > to move right or SHIFT , to move left
-y<n>y then p, to duplicate the line.
-'dG' - Deletes contents from cursor to end of file. This is very useful when editing YAML files.
-'ZZ' - Save and exit quickly.
+# This file provides information of VIM Commands
+
+### Keep formatting when pasting xml 
+:set paste / :set autoindent / :set shiftwidth=2
+
+### Get into Visual Mode
+SHIFT V
+
+### Move right
+Select the rows, SHIFT >
+
+### Move left
+Select the rows, SHIFT ,
+
+### Duplicate the line
+y(number)y then p where number is the number of lines and p means paste
+
+### Delete ontents from cursor to end of file
+dG This is very useful when editing YAML files.
+
+### Save and exit quickly
+ZZ
  
+### Normal Mode
+j is Down
+k is Up
+l is Right
+j is Left
+
+### Move multiple lines
+(number) and k 
  
-Normal Mode
-j à Down
-k à Up
-l à Right
-j à Left
-move multiple lines use <number> + k
+### Beginning of file
+gg
+
+### End of file
+GG
  
-gg à BOF
-G à EOF
+### Word forward beginning letter without punctuations as part of word / with punctuations as part of word
+w / W
+
+### Word forward ending letter without punctuations as part of word / with punctuations as part of word
+e / E
+
+### Word backword ending letter without punctuations as part of word / with punctuations as part of word
+b / B
+
+### Goto end of line
+$
+
+### Beginning end of line
+0
+
+### Use above with (numbers) to jump multiple words
+
+### Goto a specific line
+:(number)
+Example: :13 to goto 13th line
+
+### To search for a text forward
+/(word)
+Example: /nginx to search for nginx 
+While in search to get to next/previous occurrence press n/N
+
+### To search for a text backward
+?(word)
+
+### Insert mode (i)
+i for inserting before the cursor
+I for inserting before end of line
+a for appending before the cursor
+A for appending before end of line
+o for inserting new line after
+O for iserting new line before
+
+### Undo
+u
+
+### Visual Mode (v)
+v for selecting the character
+V for selecting the LINE
  
-w à word forward beginning letter (W including punctuations as part of word)
-e à word forward ending letter (E including punctuations as part of word)
-b à word back  word beginning letter (B including punctuations as part of word)
-$ à goto end of line
-0 à zero beginning of line
-(use above with <numbers> to jump multiple words)
- 
-:13 à goto 13th line
-/nginx à search for nginx (to get next/previous occurrence press n/N)
-?nginx à backward search
-f/F à forward/backward find a character (cant understand what it does)
- 
-Insert Mode (i)
-i/I à insert before the cursor/BOL
-a/A à append after the cursor/EOL
-u à undo
-s/S à remove the cursor/LINE and replace. Like under the cursor/LINE.
-o/O à next/previous new line
- 
-Visual Mode (v)
-v/V à selecting the character/LINE
- 
-Replace Mode (r)
-r/R à replace the character/LINE
- 
-VIM Language
-c à change
-d à delete
-y à copy or yank
-p à paste
- 
-cw/cb à change the word front/back (puts you in insert mode too)
-dw/db à delete the word front/back
-yw/yb à copied the word front/back
-cc/C à change the whole line
-dd à delete the whole line
-. à repeat previous action
-D/d$ à delete everything from cursor to EOL
-d0 à delete everything from cursor to BOL
-c3w à change next 3 words and type to replace
-ci{ à change inside bracket.
-di{ à delete inside bracket.
-ca{ à change the bracket block 
-da{ à delete the bracket block
- 
-:%s/nginx/frontend/gc  à find replace global with confirmation
+### Replace Mode (r)
+r for selecting the character
+R for selecting the LINE
+
+### VIM Language
+c for change
+d for delete
+y for copy or yank
+p for paste
+
+### Change the word (also puts you into insert mode)
+cw for changing the word front
+cb for changing the word back 
+dw for deleting the word front
+db for deleting the word back 
+yw for copying the word front
+yb for copying the word back 
+cc or C for chanding the whole line
+dd to delete the whole line
+. to repeat previous action
+D or d$ to delete everything from cursor to EOL (end of line)
+d$ to delete everything from cursor to BOL (beginning of line)
+
+c(number)w to change next number words and type to replace. Example: c3n to change next 3 words
+
+### Find replace globally with confirmation
+%s/(text1)/(text2)/gc
+Example :%s/nginx/frontend/gc
