@@ -5,10 +5,12 @@ Security Engineers
 Application Engineers 
 Operation Engineers 
 Lead Architect 
+
 Assess Phase 
 Migration Evaluator 
 Migration Readiness Assessment  
 Migration Hub 
+
 Mobilize 
 Know about 7Rs 
 Create a Landing Zone 
@@ -16,8 +18,11 @@ Organization Account
 Security Account 
 Shared Services Account 
 Log Archive Account 
+
 Ultimately, create an account vending machine / AWS Control Tower 
 For DB migration, there are database migration playbooks and reference guides 
+
+
 Create 7Rs swim lanes for the application suite that needs to be migrated. 
 Enable Metered Billing  
 For Java Migration, use github.com/windup 

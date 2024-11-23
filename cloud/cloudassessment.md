@@ -38,7 +38,7 @@ Do you have any preferences for specific VMware components or features? Or is th
 Is the IT, business leaders, and key stakeholders aligned on this initiative?
 What security framework is used currently
 
-What is the current API types followed E.g.) REST, GraphQL, SOAP, gRPC	
+What is the current API types followed E.g. REST, GraphQL, SOAP, gRPC	
 Is there a plan to add new API types?	
 Does API used just for Internal or External or Third party integrations	
 Is there versioning of the API's for easy rollback?	
