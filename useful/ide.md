@@ -1,4 +1,4 @@
-terminals.json
+### Create a terminals.json using the below JSON file
 {
   "autorun": false,
   "terminals": [
@@ -52,7 +52,7 @@ terminals.json
 
 
 
-This is sample remote.txt for vs code remote terminal
+### One example of creating remote.txt for vs code remote terminal
 Host xxtdev
   HostName 10.0.0.38
   IdentityFile C:\Users\xx\Downloads\ssh\.ssh\xx.pem
@@ -61,14 +61,14 @@ Host xxtdev
 
 
 
-Mobaxterm aliases
+### How to add Mobaxterm aliases
 function git-quickcommit { git add -u ; git commit -m minorchange ; git push }
 Set-Alias -Name gitm -Value git-quickcommit
 $profile
 function gitpush($a) { git add -u ; git commit -m $a ; git push}
 function gitm { git add -u ; git commit -m minorchange ; git push }
 
-
+### Easilty push code to all branches one by one
 git branch merge
 git checkout qa
 git pull
@@ -94,20 +94,32 @@ git diff stage..prod
 
 
 
-VS Code Shortcuts
-Ctrl + b è toggle sidebar
-Ctrl + Shift + p à Command palette
-Command à View Zen Mode à Full Screen
-Ctrl + p à search files
-Ctrl + page up à move across open files
-Ctrl + c & v à copy paste line
-Ctrl + d à will select the word
-Settings à Turn WordWrap on
-Settings à Exclude Node Modules from the directory. It will not show.
-Settings à Expand the cursor. Zooms in and Zooms out.
-Extensions à Prettier, Better Comments, Quokka.js (live scratchpad), Live Server, Bracket Pair Colorizer, impost cost, Auto Import, Markdown PDF, Setting Sync, Git Lens, thunder client.
+## VS Code Shortcuts
+### Toggle sidebar
+Ctrl + b 
+### Command palette
+Ctrl + Shift + p 
+### Dearch files
+Ctrl + p
+### Move across open files
+Ctrl + page up
+### Copy paste line
+Ctrl + c & v
+### Select a word
+Ctrl + d
+### Multi line editing
+Ctrl + D
+### Highlighting lines
+Ctri + L
+
+### Some setting to setup in VS CODE
+Goto Settings and Turn WordWrap on
+Goto Settings and Exclude Node Modules from the directory. It will not show.
+Goto Settings and Expand the cursor. Zooms in and Zooms out.
+
+### Setup the below VS Code extensions
+Prettier, Better Comments, Quokka.js (live scratchpad), Live Server, Bracket Pair Colorizer, impost cost, Auto Import, Markdown PDF, Setting Sync, Git Lens, Thunder Client.
 Do “User Snippets”. Use repeated code.
  
-IN command pallete- use # to find code, and @ to find symbols.
-Multi line editing, use Ctrl + D.
-Highlighting lines use Ctrl + L
+### Command Pallette
+In command pallete, use character # to find code, and character @ to find symbols
