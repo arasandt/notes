@@ -23,6 +23,7 @@ gcloud ai models describe 5805806223727001600 --region=us-central1
 
 workflow list gcloud 
 gcloud dataproc workflow-templates describe formaltemplate --region=us-central1
+
 Bigtable creation
 gcloud bigtable instances tables create samplefile --instance=bigtable-dynamo --project=xx-genai-gcp-xx-207616 --column-families="userid,firstname,lastname,score" --splits="userid"
 
@@ -41,6 +42,7 @@ gcloud auth print-access-token | docker login -u oauth2accesstoken --password-st
 create secret
 echo -n "my super secret data" | gcloud secrets create my-secret --replication-policy="user-managed" --data-file=-
 gcloud secrets create DB_CERTS --replication-policy="user-managed" --data-file=elasticsearch-ca.crt --locations=us-east4
+
 gcloud get all compute imamges
 gcloud compute images list
 
